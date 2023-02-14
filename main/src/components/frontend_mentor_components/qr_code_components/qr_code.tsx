@@ -1,6 +1,6 @@
 import qr_code from "../../../assets/image-qr-code.png";
 
-function QRCComponents() {
+function QRCComponent() {
   return (
     <div className="w-96 h-fit flex flex-col justify-center items-center bg-white p-4 rounded-2xl">
       <img className="rounded-2xl" src={qr_code} alt="" />
@@ -17,4 +17,4 @@ function QRCComponents() {
   );
 }
 
-export default QRCComponents;
+export default QRCComponent;
