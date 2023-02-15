@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       backgroundImage:{
         'hero':"url('../assets/image-web-3-desktop.jpg')",
-        'hero-mobile':"url('../assets/image-web-3-mobile.jpg')"
+        'hero-mobile':"url('../assets/image-web-3-mobile.jpg')",
+        'main':"url('../assets/ttten.svg')"
+      },
+      fontFamily:{
+        'poppins':['Poppins']
       }
     },
   },

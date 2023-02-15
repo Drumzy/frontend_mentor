@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { MainMenuCloseIcon } from "../MainMenuIcon";
 
 export interface DrawerProps {
   children: ReactNode;
@@ -21,9 +22,20 @@ export function Drawer({ children, isOpen, setIsOpen }: DrawerProps) {
           (isOpen ? " translate-x-0 " : " -translate-x-full ")
         }
       >
-        <article className="relative w-screen max-w-lg pb-10 flex flex-col space-y-6 h-full">
-          <div className="w-full flex justify-center">
-            <header className="p-2 font-bold text-2xl">Challenges</header>
+        <article className="relative w-screen max-w-lg pb-10 flex flex-col h-full">
+          <div className="flex flex-col p-5">
+            <div className="flex justify-between">
+              <h3 className="p-4 font-bold text-2xl">Navigation</h3>
+              <button type="button" onClick={() => setIsOpen(false)}>
+                <MainMenuCloseIcon />
+              </button>
+            </div>
+            <a
+              href={"/"}
+              className="hover:text-white font-semibold text-lg p-4 hover:bg-stone-800 rounded"
+            >
+              Home
+            </a>
           </div>
           {children}
         </article>

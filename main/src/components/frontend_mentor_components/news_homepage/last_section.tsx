@@ -10,16 +10,16 @@ export interface SpecialHeadingProps {
 
 function SpecialHeading(props: SpecialHeadingProps) {
   return (
-    <div className="flex gap-4 h-40">
+    <div className="flex flex-col sm:flex-row gap-4 md:h-40 h-fit w-full">
       <img src={props.img} alt="" />
-      <div className="flex flex-col justify-between">
-        <span className=" text-gray-400 text-[40px] font-extrabold">
+      <div className="flex flex-col justify-around md:justify-between">
+        <span className=" text-gray-400 text-[26px] md:text-[40px] font-extrabold">
           {"0" + props.ranking}
         </span>
-        <h4 className="text-xl font-extrabold hover:text-red-500">
+        <h4 className="text-lg md:text-xl font-extrabold hover:text-red-500">
           {props.title}
         </h4>
-        <p className="text-gray-600 text-lg">{props.description}</p>
+        <p className="text-gray-600 text-sm md:text-lg">{props.description}</p>
       </div>
     </div>
   );
