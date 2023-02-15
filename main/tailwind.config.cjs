@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'hero':"url('./image-web-3-desktop.jpg')",
-        'hero-mobile':"url('./image-web-3-mobile.jpg')"
+        'hero':"url('./src/assets/image-web-3-desktop.jpg')",
+        'hero-mobile':"url('./src/assets/image-web-3-mobile.jpg')"
       }
     },
   },
