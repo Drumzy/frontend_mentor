@@ -7,8 +7,8 @@ normalizePath(path.resolve(__dirname,'./src'))
 export default defineConfig({
   plugins: [react(),viteStaticCopy({
     targets:[{
-      src:"./src/assets",
-      dest:'assets'
+      src:["./src/assets/image-web-3-desktop.jpg","./src/assets/image-web-3-mobile.jpg"],
+      dest:'./assets'
     }]
   })],
 })
