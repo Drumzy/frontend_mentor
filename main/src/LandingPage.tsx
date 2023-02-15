@@ -2,7 +2,7 @@ import linkedinLogo from "./assets/LI-In-Bug.png";
 import GithubLogo from "./components/ui/SocialLogos/github";
 export default function LandingPage() {
   return (
-    <div className="w-full p-2 flex flex-col justify-center items-center gap-6">
+    <div className="w-full p-2 flex flex-col justify-center items-center gap-6 bg-main bg-cover bg-center bg-no-repeat">
       <h1 className="text-6xl md:text-8xl font-extrabold text-stone-800">
         Frontend Mentor Challenges
       </h1>

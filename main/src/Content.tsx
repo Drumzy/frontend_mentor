@@ -13,7 +13,7 @@ export default function Content() {
   const links: Array<Link> = JSON.parse(JSON.stringify(jsonData));
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col bg-[#DCE2F0]">
       <button
         className="bg-stone-800 text-white rounded-full w-10 h-10 flex items-center justify-center fixed right-2 bottom-2 md:top-4"
         onClick={() => setIsOpen(true)}
